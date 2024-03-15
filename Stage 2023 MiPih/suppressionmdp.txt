@@ -1,0 +1,42 @@
+history
+grep ""
+$() (dans le script)
+
+Dans le fichier historique.txt
+Supprimer tte les occurences de ja.a ou cl.g
+grep pour récupérer les numéros de lignes et ensuite supprimer 
+Voir comment excécuter le scirpt tte les semaines / tt les dimanches à 22h
+
+Commandes # efface de la ligne 1 à 5
+ 
+sed -i '1,5d' ton_fichier
+
+Commande cut pour récupérer le permier numéros
+1038  sudo https_proxy="" wget https://.zip
+
+aaaaaa      aaaa  aaaaaa aa
+aaaaaa aaaa aaaaaa aa
+cut -d " " -f 2
+aaaa
+sudo cat historique.txt | grep "https_proxy" | cut -d " " -f 2
+1038
+1039
+1145
+1171
+1381
+1418
+1458
+1459
+1919
+
+
+
+#!/bin/bash
+
+#Retrouver et effacer les lignes confidentielles de l'historique de commandes
+line=$(sudo cat historique.txt | grep "https_proxy" | cut -d " " -f 2)
+for ligne in $line;
+do
+    echo $ligne
+    sed -i $ligne test.txt
+done

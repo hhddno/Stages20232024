@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de maintenance | Mipih</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="mipih.jfif" type="image/png">
+</head>
+<body>
+  <div class="slideshow"></div>
+
+  <div class="container">
+    <h1>Maintenance en cours</h1>
+    <p>Bientôt de retour !</p>
+
+    <div class="countdown-container">
+      <div class="countdown-item">
+        <div class="countdown-circle">
+          <span id="days" class="countdown-number"></span>
+          <span class="countdown-label">jours</span>
+        </div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-circle">
+          <span id="hours" class="countdown-number"></span>
+          <span class="countdown-label">heures</span>
+        </div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-circle">
+          <span id="minutes" class="countdown-number"></span>
+          <span class="countdown-label">minutes</span>
+        </div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-circle">
+          <span id="seconds" class="countdown-number"></span>
+          <span class="countdown-label">secondes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="email-form">
+      <h2></h2>
+      <input type="email" placeholder="Votre adresse e-mail">
+      <button>S'inscrire</button>
+    </div>
+  </div>
+
+  <script src="countdown.js"></script>
+  <script src="slideshow.js"></script>
+</body>
+</html>
